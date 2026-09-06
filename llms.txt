@@ -19,10 +19,12 @@ en: Himotoku is an iPhone diary app: talk or type and it becomes a page, and you
 ## URLs
 - Japanese home: https://yoshimotokzm.github.io/himotoku/
 - Japanese privacy: https://yoshimotokzm.github.io/himotoku/privacy/
+- Japanese terms: https://yoshimotokzm.github.io/himotoku/terms/
 - Japanese support: https://yoshimotokzm.github.io/himotoku/support/
 - Japanese press: https://yoshimotokzm.github.io/himotoku/press/
 - English home: https://yoshimotokzm.github.io/himotoku/en/
 - English privacy: https://yoshimotokzm.github.io/himotoku/en/privacy/
+- English terms: https://yoshimotokzm.github.io/himotoku/en/terms/
 - English support: https://yoshimotokzm.github.io/himotoku/en/support/
 - English press: https://yoshimotokzm.github.io/himotoku/en/press/
 - App Store (Japan): https://apps.apple.com/jp/app/id6807689858
