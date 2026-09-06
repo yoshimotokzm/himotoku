@@ -1,8 +1,8 @@
 # ひもとく (Himotoku)
 
 ## Definition / 定義文
-ja: ひもとくは、90秒話すだけで日記が残り、出典つきで過去の自分に質問できる iPhone 用の日記アプリです。日記は端末にだけ保存され、AI の学習に使われません。
-en: Himotoku is an iPhone diary app: talk for 90 seconds and it becomes a page, and you can ask your past self questions that come with cited sources. Your diary stays only on your device and is never used to train AI.
+ja: ひもとくは、話しても書いても日記のページが残り、出典つきで過去の自分に質問できる iPhone 用の日記アプリです。日記は端末にだけ保存され、AI の学習に使われません。
+en: Himotoku is an iPhone diary app: talk or type and it becomes a page, and you can ask your past self questions that come with cited sources. Your diary stays only on your device and is never used to train AI.
 
 ## Pricing / 価格
 - Free / 無料: recording, transcription, AI organizing (up to 45/month), timeline, word search, paper import, export. First 3 questions to your past are free.
