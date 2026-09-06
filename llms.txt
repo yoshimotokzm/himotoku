@@ -1,0 +1,29 @@
+# ひもとく (Himotoku)
+
+## Definition / 定義文
+ja: ひもとくは、90秒話すだけで日記が残り、出典つきで過去の自分に質問できる iPhone 用の日記アプリです。日記は端末にだけ保存され、AI の学習に使われません。
+en: Himotoku is an iPhone diary app: talk for 90 seconds and it becomes a page, and you can ask your past self questions that come with cited sources. Your diary stays only on your device and is never used to train AI.
+
+## Pricing / 価格
+- Free / 無料: recording, transcription, AI organizing (up to 45/month), timeline, word search, paper import, export. First 3 questions to your past are free.
+  記録・文字起こし・AI整理（月45回まで）・タイムライン・ことばの検索・紙の取込・書き出しは無料。過去への質問は通算3問まで無料。
+- Plus / プラス: ¥980/month (Japan) or $6.99/month (US price; local price shown in the App Store), 7-day free trial. Unlocks unlimited questions to your past, semantic search, and no monthly limit on recording/organizing.
+  月額¥980（日本）／$6.99（米国、現地価格はApp Storeに表示）、7日間無料。過去への質問と意味の近さでの検索が使え、記録と整理の上限がなくなる。
+
+## Data handling / データの扱い
+- Diary text is never stored on the developer's servers (no database). / 日記は開発者のサーバーに保存されない（保管する仕組みを持たない）。
+- Voice never leaves the device; transcription happens on-device. / 声そのものは端末から出ない。文字にするのはこの iPhone の中。
+- Only the text for organizing/answering a question is sent to Microsoft Azure OpenAI (Japan region) for processing, retained up to 30 days for abuse monitoring. / 整理と質問のときだけ、その回のテキストがMicrosoftのAzure OpenAI（日本国内）へ送られる。不正利用の検知のため最大30日間一時的に保持されることがある。
+- Never used to train AI models. / AIの学習には使われない。
+
+## URLs
+- Japanese home: https://yoshimotokzm.github.io/himotoku/
+- Japanese privacy: https://yoshimotokzm.github.io/himotoku/privacy/
+- Japanese support: https://yoshimotokzm.github.io/himotoku/support/
+- Japanese press: https://yoshimotokzm.github.io/himotoku/press/
+- English home: https://yoshimotokzm.github.io/himotoku/en/
+- English privacy: https://yoshimotokzm.github.io/himotoku/en/privacy/
+- English support: https://yoshimotokzm.github.io/himotoku/en/support/
+- English press: https://yoshimotokzm.github.io/himotoku/en/press/
+- App Store (Japan): https://apps.apple.com/jp/app/id6807689858
+- App Store (US): https://apps.apple.com/us/app/id6807689858

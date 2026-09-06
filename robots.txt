@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yoshimotokzm.github.io/himotoku/sitemap.xml

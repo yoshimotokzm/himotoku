@@ -1,0 +1,255 @@
+/* ひもとく 公式サイト — 共通スタイル
+   デザイントークンは docs/04_UIUX設計.md §1 に準拠。新しい色は追加しない。 */
+
+:root {
+  --paper: #FAF9F6;
+  --paper-elevated: #FFFFFF;
+  --ink: #26241F;
+  --ink-secondary: #6E6A61;
+  --ink-faint: #9B968C;
+  --indigo: #3A5A8C;
+  --indigo-wash: #EDF1F7;
+  --hairline: #E5E2DB;
+  --line: #E4E1DA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17181A;
+    --paper-elevated: #1F2023;
+    --ink: #E8E6E1;
+    --ink-secondary: #A6A29A;
+    --ink-faint: #6B6862;
+    --indigo: #8FA9D6;
+    --indigo-wash: #232A36;
+    --hairline: #2C2D30;
+    --line: #2C2D30;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--indigo); }
+a:visited { color: var(--indigo); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--hairline);
+  padding: 16px 0;
+}
+
+header.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lang-switch a {
+  margin-left: 12px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.lang-switch a.current {
+  color: var(--ink-secondary);
+  pointer-events: none;
+}
+
+main {
+  padding: 32px 0 48px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 32px 0 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--hairline);
+}
+
+section:first-of-type h2:first-child,
+h2:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 20px 0 8px;
+}
+
+p { margin: 0 0 16px; }
+
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 8px; }
+
+.lede {
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.tagline {
+  color: var(--ink-secondary);
+  font-size: 0.95rem;
+}
+
+.card {
+  background: var(--indigo-wash);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.shot {
+  max-width: 260px;
+  margin: 1.5rem auto;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  aspect-ratio: 1206 / 2622;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.press-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.press-shots .shot {
+  margin: 0;
+}
+
+figure { margin: 0; }
+figcaption {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  margin-top: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+caption {
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  margin-bottom: 8px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+th { color: var(--ink-secondary); font-weight: 600; }
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.faq-item { margin-bottom: 20px; }
+.faq-q { font-weight: 600; margin-bottom: 6px; }
+.faq-a { color: var(--ink); }
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--hairline);
+  padding: 24px 0 40px;
+  color: var(--ink-secondary);
+  font-size: 0.85rem;
+}
+
+footer.site-footer .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer.site-footer nav a {
+  margin-right: 14px;
+}
+
+.press-fact {
+  color: var(--ink-secondary);
+  font-size: 0.9rem;
+}
+
+.demo-box {
+  border: 1px dashed var(--ink-faint);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: var(--ink-secondary);
+}
